@@ -1,67 +1,60 @@
 <!DOCTYPE html>
-
-<html>
-<head> 
-     <title> Super Cool Page!</title>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta author="It's Me...">
+    <meta charset="UTF-8">
+        <title>Very Technical Page</title>
 </head>
+
+<body style="background-color: beige;">
+    <h1 style="font-family: verdana; color:#8b0101; font-weight: bolder"><b>Hello vro...</b></h1>
+            <hr>
+        <p style="font-family: times new roman; font-weight:bolder; background-color: #421678; color:#ffffff; font-display: block ;"><big><b><i>Click on us ...</i></b></big></p>
+
+            <a href ="https://www.tiktok.com/@callmebelly/video/7409801694449618206?lang=en">
+                <img src="cat.jpg" height="200" title="Click on me vro.."></a>
+        
+             <a href ="https://www.tiktok.com/@waynegg8/video/7460649931494182150" >
+                 <img src="dog.jpg" height="200" title="Click on me too..">
+            </a>
+
+            <a href ="https://en.wikipedia.org/wiki/Bussy" >
+                <img src="toothy.jpg" height="200" title="Click on me three..">
+             </a>
+
+            <a href ="https://www.tiktok.com/@friggintuffyo4/video/7480717051896548650?q=screaming%20pigeon&t=1757541032781" title="Click on me to be early..">
+                <img src="wormie.jpg" height="200">
+            </a>
+
+            <a href ="https://www.tiktok.com/@yeezytravis/video/7505892756905020703" title="Click on me UwU..">
+                <img src="652e917b2813e3947231754287c97c76.jpg" height="200">
+             </a>
+
+        <hr>
+    <p style="font-family: times new roman; background-color: #421678; color:#ffffff; font-display:block"><big><b><i>so cool...</i></b></big></p>
+
+        <button id="PlayButton" onclick="playAudio(); pauseAudio();" style="font-family:fantasy; width:200px; height:80px;  background-color: #138d64; color:black; border-radius: 20px; border-width: 10px; border-color:#033f3a; font-size:larger; font-weight:bold"> 
+            Play me vro...
+        </button>
+
+            <audio id="John_Teo">
+                <source src="John Teo.mp3"> 
+             </audio>
+
+        <script>
+        PlayButton.addEventListener('click', () => {
+            if (John_Teo.paused) {
+                John_Teo.play();
+                PlayButton.textContent = "Don't stop me vro...";
+
+            } else {
+                John_Teo.pause();
+                PlayButton.textContent = 'Play me vro..';
+            }
+        });
+        </script>
+
 
 
 </body>
-
-<h1>My super cool site</h1>
-    <hr>
-<h2> i like pizza!!</h2>
-<h3> i like pizza!!</h3>
-<h4>i like pizza!!</h4>
-<h5> i like pizza!!</h5>
-<h6>pizza!!</h6>
-
-    <hr>
-
-<p>Those are the different header sizes from h1-6 and this is a paragraph</p>
-<p> you can also add horizontal lines to separate text using the hr tag </p>
-
-    <hr>
-
-<p>Potential break next with the br tag???</p>
-
-<h3> whoa theres a break between this...</h3>
-<br>
-<h3> and this!</h3>
-
-    <!-- you can also add comments like the other languages like this!-->
- <h4> add horizontal lines to your page too like this...</h4>
-<hr>
-<h3> whoa..</h3>
-<hr> 
-    <!-- we're gonna add hyperlinks now because theyre cool-->
-
-<p><b>look! a link! and a bold paragraph!</b></p>
-
-    <a href="https://www.tiktok.com/@waynegg8/video/7460649931494182150" target=_self title="Click on me, y'know you want to" 
-    > <b> Click on Me! </b>
-</a>
-
-<p> you can set a <b>hyperlink</b> like the one above by using the a tags and href command within the opening tag. after the opening tag you can write the text you'd like to hyperlink!</p>
-    <!-- you can also add a description or title that appears when you hover your mouse over the link-->
-
-<a href="http://127.0.0.1:5500/second_page.html" target="_blank" title="This will take you to a new page"> <b>You're off to page 2!<b></a>
-
-    <hr>
-<h1>we're gonna add images now using the img tag</h1>
-    <hr>
-        <img src="worm_for_site.jpg" height="300">
-<p> if youve got your image files in the same folder as your html files, you can just use what you named it as in the img tag</p>
-<p> there's another guy on the next page </p>
-    <br>
-<p><b>we're gonna add a little tune now using audio tags and controls</b></p>
-<audio controls src="Xue_Hua_audio.mp3"></audio>
-    <!--attributes like 'controls' or 'autoplay' are boolean attributes that are either true (1) or false (0) and when present in a command, they are recognised as true and will automatically be performed-->
-    <!-- you can also add attributes like 'autoplay muted' or 'loop' to initially mute the audio, have it play automatically or even loop around-->
-<p>you can do the same for video mp.4 files, and also nest sources of the same video under the same video tag or audio tag. the same boolean attributes can also be used with videos</p>
-    <!--nesting sources (linking multiple sources to the same video) allows more support when using different browsers that may not support one of the listed sources-->
-
-</body> 
-
-
 </html>
